@@ -1,0 +1,54 @@
+import java.util.*;
+class Main {
+    public static int fun(int a, int b){
+        if(a>0 && b>0 && a+b>0)return a+fun(a-2,b-2)+b;
+        return a^b;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        Q1...
+        int w=sc.nextInt();
+        int x=sc.nextInt();
+        int y=0;
+        if(x%w==0 || w%x==0)y++;
+        else y+=10;
+        System.out.println(y);
+        
+        
+        Q2...
+        int a=1;
+        int c=0;
+        while(a<5){
+            a+=2;
+            c++;
+        }System.out.println("count: " + c);
+        System.out.println("a=" + a);
+        
+        
+        Q3...
+        System.out.println(fun(8, 8));
+        
+        
+        Q4...
+        int a,b;
+        a=3;
+        b=3;
+        if((1^1)>0)a=1;
+        else b=2;
+        System.out.println(a+b);
+        
+        
+        Q5...
+        int a=2;
+        int b=2;
+        for(int c=2;c<5;c++){
+            if(a%2 < b%3)a=4%3;//a=1
+            else{
+                if(5%3 > b)a=b;
+                b=1;
+            }
+        }
+        System.out.println(a+b);
+    }
+}
